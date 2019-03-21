@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Questions">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/nigeriaFlag"
+        android:padding="20dp"/>
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:text="Which Country does the above flag represent?"
+        android:layout_below="@id/imgChange"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:padding="10dp"
+        android:textAllCaps="false"/>
+
+    <RadioGroup
+        android:id="@+id/radioG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvQuestion">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Nigeria"
+            android:textSize="22sp"
+            android:textStyle="italic"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="China"
+            android:textSize="22sp"
+            android:textStyle="italic"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="France"
+            android:textSize="22sp"
+            android:textStyle="italic"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Marcedonia"
+            android:textSize="22sp"
+            android:textStyle="italic"/>
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:layout_below="@id/radioG"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/btnborder"/>
+
+    </ScrollView>
+
+</RelativeLayout>
+
+</android.support.v7.widget.CardView>
